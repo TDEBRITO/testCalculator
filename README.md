@@ -15,15 +15,21 @@ Realisation time : 80 minutes
 
 ## Installation:
 	
+Clone the project 
+
     - git clone https://github.com/TDEBRITO/testCalculator.git
     
     - open .env file in project directory (copy .env.dist and create .env file out of it (in same location) if not exists)
     ( I've left all informations to make it simpler - bad practice )
    
+Build and start Docker 
+
     - go to project directory and run: docker-compose build (if you want to start it with docker) 
     - then run: make-docker up
     
-    You now need to install the project
+    * Docker is now running
+    
+You now need to install the project
     
     Enter the docker:
     - docker-compose run php bash
@@ -32,8 +38,9 @@ Realisation time : 80 minutes
     - composer install
   
     * If you have no error, the project is running on 127.0.0.1 or calculatortest.local (add it to your hosts file)
-    
+ 
+Start the fun 
+   
     - go to /calculator
     
     - do your math (and enjoy)
-
