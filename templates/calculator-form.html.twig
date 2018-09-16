@@ -1,0 +1,22 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+    <h1> Calculator</h1>
+    {{ form_start(form) }}
+    <div id="calculator" class="calculator">
+        {{ form_widget(form.firstValue) }}
+        {{ form_widget(form.sign) }}
+        {#<div class="full">#}
+        {#<button data-ops="plus" class="ops">+</button>#}
+        {#<button data-ops="minus" class="ops">-</button>#}
+        {#<button data-ops="times" class="ops">x</button>#}
+        {#<button data-ops="divided by" class="ops">/</button>#}
+        {#</div>#}
+        {{ form_widget(form.secondValue) }}
+        <button id="equals" class="equals" type="submit">=</button>
+    {% if result %}
+        Result : {{ result }}
+    {% endif %}
+    </div>
+    {{ form_end(form) }}
+{% endblock %}
