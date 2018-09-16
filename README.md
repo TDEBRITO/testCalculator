@@ -18,12 +18,12 @@ Realisation time : 80 minutes
     - git clone https://github.com/TDEBRITO/testCalculator.git
     
     - open .env file in project directory (copy .env.dist and create .env file out of it (in same location) if not exists) ( I've left all informations to make it simpler - bad practice )
+   
     - go to project directory and run: docker-compose build (if you want to start it with docker) 
-    
     - then run: make-docker up
     * If you have no error, the project is running on 127.0.0.1 or calculatortest.local (add it to your hosts file)
     
     - go to /calculator
     
-    - do your math
+    - do your math (and enjoy)
 
